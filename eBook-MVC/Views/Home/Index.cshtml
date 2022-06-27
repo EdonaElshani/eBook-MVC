@@ -1,3 +1,9 @@
+@{
+    string HeroTitle = "Zgjero Diturinë Me Ne";
+
+    string [] autoret = { "Peter Thiel", "Paulo Coelho", "Markus Zusak", "Marie Lu", "Jordan Peterson"};
+}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,7 +13,7 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Ebooks</title>
     <link rel="stylesheet" href="~/css/style.css" />
-    <link rel="stylesheet" href="media_queries_index.css" />
+    <link rel="stylesheet" href="~/css/media_queries_index.css" />
     
   </head>
   <body>
@@ -37,7 +43,7 @@
         </nav>
 
       <div class="header-section">
-        <h1>Zgjero Diturinë Me Ne</h1>
+        <h1>@HeroTitle</h1>
         <p>Eksploroni botëra të reja nga autorët e famshëm botëror</p>
         <a class="read-more" href="book-info.html">Lexo më shumë</a>
       </div>
@@ -48,12 +54,12 @@
         <div class="zero-to-one first-item trend-book">
           <img src="~/css/Fotografite\Foto\Zero to one.png" alt="Zero to one book" />
           <a href="book-info.html">Zero to one</a>
-          <p>Peter Thiel</p>
+          <p>@autoret[0]</p>
         </div>
         <div class="alchemist second-item trend-book">
           <img src="~/css/Fotografite\Foto\Alchemist.png" alt="Alchemist book" />
           <a href="#">Alchemist</a>
-          <p>Paulo Coelho</p>
+          <p>@autoret[1]</p>
         </div>
         <div class="The-book-thief third-item trend-book">
           <img
@@ -61,12 +67,12 @@
             alt="The book thief book"
           />
           <a href="#">The book thief</a>
-          <p>Markus Zusak</p>
+          <p>@autoret[2]</p>
         </div>
         <div class="Legend forth-item trend-book">
           <img src="~/css/Fotografite\Foto\Legend.png" alt="Legend book" />
           <a href="#">Legend</a>
-          <p>Marie Lu</p>
+          <p>@autoret[3]</p>
         </div>
         <div class="12-rules fifth-item trend-book">
           <img
@@ -74,7 +80,7 @@
             alt="12 Rules for life book"
           />
           <a href="#">12 Rules of life</a>
-          <p>Jordan Peterson</p>
+          <p>@autoret[4]</p>
         </div>
       </div>
 
