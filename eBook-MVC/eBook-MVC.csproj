@@ -5,4 +5,15 @@
     <RootNamespace>eBook_MVC</RootNamespace>
   </PropertyGroup>
 
+
+  <ItemGroup>
+    <None Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <Folder Include="Views\Shared\" />
+    <Folder Include="wwwroot\css\" />
+  </ItemGroup>
+
 </Project>
